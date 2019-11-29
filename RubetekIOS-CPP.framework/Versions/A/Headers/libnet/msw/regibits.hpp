@@ -1,0 +1,33 @@
+#pragma once
+
+
+#include <msw/regibits/location/bit_mask.hpp>
+#include <msw/regibits/location/interval_mask.hpp>
+#include <msw/regibits/location/lsb_mask.hpp>
+#include <msw/regibits/location/lsb_mask_rt.hpp>
+#include <msw/regibits/location/msb_bit.hpp>
+#include <msw/regibits/location/msb_mask.hpp>
+#include <msw/regibits/location/msb_mask_rt.hpp>
+#include <msw/regibits/location/select_bit.hpp>
+#include <msw/regibits/location/select_group.hpp>
+#include <msw/regibits/location/select_lsb_group.hpp>
+#include <msw/regibits/location/select_msb_group.hpp>
+#include <msw/regibits/permutation/apply_lsb_mask.hpp>
+#include <msw/regibits/permutation/apply_msb_mask.hpp>
+#include <msw/regibits/permutation/copy_group.hpp>
+#include <msw/regibits/permutation/fill_bit.hpp>
+#include <msw/regibits/permutation/fill_group.hpp>
+#include <msw/regibits/permutation/fill_lsb_group.hpp>
+#include <msw/regibits/permutation/fill_msb_group.hpp>
+#include <msw/regibits/permutation/reset_bit.hpp>
+#include <msw/regibits/permutation/reset_group.hpp>
+#include <msw/regibits/permutation/reset_lsb_group.hpp>
+#include <msw/regibits/permutation/reset_msb_group.hpp>
+#include <msw/regibits/permutation/set_bit.hpp>
+#include <msw/regibits/permutation/set_group.hpp>
+#include <msw/regibits/permutation/set_lsb_group.hpp>
+#include <msw/regibits/permutation/set_msb_group.hpp>
+#include <msw/regibits/transform/bit_invert.hpp>
+#include <msw/regibits/transform/bit_reverse.hpp>
+#include <msw/regibits/transform/bit_rsh.hpp>
+#include <msw/regibits/transform/byte_reverse.hpp>

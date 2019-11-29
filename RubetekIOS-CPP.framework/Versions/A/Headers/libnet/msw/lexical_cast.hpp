@@ -1,0 +1,24 @@
+#pragma once
+
+#include <msw/lexical_cast/bool2str.hpp>
+#include <msw/lexical_cast/bool_from_string.hpp>
+#include <msw/lexical_cast/byte.hpp>
+#include <msw/lexical_cast/bytes_as_string.hpp>
+#include <msw/lexical_cast/can_cast.hpp>
+#include <msw/lexical_cast/count_from_string.hpp>
+#include <msw/lexical_cast/format_count.hpp>
+#include <msw/lexical_cast/format_size.hpp>
+#include <msw/lexical_cast/format_time.hpp>
+#include <msw/lexical_cast/hex_cast.hpp>
+#include <msw/lexical_cast/int.hpp>
+#include <msw/lexical_cast/is_ip.hpp>
+#include <msw/lexical_cast/is_port.hpp>
+#include <msw/lexical_cast/mac_from_str.hpp>
+#include <msw/lexical_cast/mac_to_str.hpp>
+#include <msw/lexical_cast/network.hpp>
+#include <msw/lexical_cast/precise_format_count.hpp>
+#include <msw/lexical_cast/ptr_to_str.hpp>
+#include <msw/lexical_cast/ptr_to_str_size.hpp>
+#include <msw/lexical_cast/size_from_string.hpp>
+#include <msw/lexical_cast/string_as_bytes_without_null.hpp>
+#include <msw/lexical_cast/tokenize_host_port.hpp>

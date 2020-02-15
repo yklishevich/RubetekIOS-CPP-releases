@@ -71,6 +71,7 @@ public:
     virtual void on_device_delete_response(bool state, std::string deviceId) = 0;
     virtual void on_start_add_device_response(bool state) = 0;
     virtual void on_get_ccversion_response(std::string const& s) = 0;
+    //virtual void on_reboot_cc_response() = 0; // will not call by engine because CC fall into reset immediately
     
     virtual void on_firmware_update_complete(std::string const& s) = 0;
     virtual void on_check_firmware_update_response(std::string const& s) = 0;
@@ -102,7 +103,15 @@ class NativeLogic : public controller_link_back_interface
 public:
     
     void init();
-    NativeLogic(string const&, string, string, string, string, string, bool, string, string);
+    NativeLogic(string const& uniqueId,
+                string deviceName,
+                string versionOS,
+                string path,
+                string lang,
+                string notifyId,
+                bool debug,
+                string defaultServer,
+                string clientVersion);
     
     void set_delegate(weak_ptr<NativeLogicDelegate> delegate);
     
@@ -187,6 +196,7 @@ public:
     void syncAddToken(std::string const& token, std::string const& login, std::string const& type);
     void getListToken();
     void finalReset();
+    void rebootCC();
     
     // HAP
     //void initHAP(std::string const &language);
@@ -277,6 +287,7 @@ private:
     void setTimeZoneResponse(std::string const& s);
     void syncAddTokenResponse(std::string const& s);
     void getListTokenResponse(std::string const& s);
+    //void rebootCCResponse(std::string const& s);
     
     void getStatisticsResponse(std::string const& s);
     void getConsumptionResponse(std::string const& s);
